@@ -1,0 +1,23 @@
+h1 {
+  
+      margin: 0 auto;
+      color: rgb(128, 0, 0);
+      text-align: center;
+      font-size: 200%;
+      
+      
+    }
+    h2 {
+      
+      margin: 0 auto;
+      text-align: right;
+      color:rgb(128, 0, 0); 
+    }
+    body.b1{
+      background-image: url('library.jpg');
+    }
+    div.div1{
+      position: relative;
+      background-color:Green;
+      height: 50px;
+    }

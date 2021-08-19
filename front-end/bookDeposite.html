@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deposit book</title>
+<link rel="stylesheet" href="bookinventory.css">
+<script src="bookDeposite.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <form id="form">
+          <div id="container">
+          <input id="bname" type="text" name="title" class="whole" placeholder="BOOK NAME"><br>
+          <input id="author" type="text" name="author" class="half left" placeholder="AUTHOR">
+          <input id="publisher" type="text" name="publisher" class="half right" placeholder="PUBLISHER">
+          <input id="edition" type="text" name="pubDate" class="half left" placeholder="EDITION">
+          <input id="bookid" type="text" name="isbn" class="half right" placeholder="BOOKID">
+          <input id="rnumber" type="text" name="rnumber" class="whole" placeholder="REGISTRATION NUMBER">
+          <br>
+          
+          
+          <div class="button input-box">
+            <input type="submit" onclick="depositeBook()" value="Submit">
+          </div>
+          
+        </div>
+          <h2 style="color: rgb(15, 15, 15);"><a style="color: rgb(17, 16, 16);" href="withdraw-deposit.html">Back to homepage</a></h2>
+
+        </form>
+      </div>
+ 
+</body>
+</html>

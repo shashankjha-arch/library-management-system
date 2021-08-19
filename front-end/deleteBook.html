@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>Withdraw book</title>
+    <link rel="stylesheet" href="deleteBook.css">
+    <script src="deleteBook.js"></script>
+</head>
+<body>
+    <h1 style="color: green">Delete book from inventory</h1>
+    <b>Search and select book</b>
+    
+        <br>
+        search book:
+        <input type="text" id="bookname" placeholder="Search.." >
+        <button onclick="searchBook()">Search book</button>
+        <br>
+        <select id="select1">
+            
+            <option value="free">Select book</option>
+        </select>
+        
+
+    
+
+        <div class="button input-box">
+            <input type="submit" onclick="deleteBook()" value="Delete book">
+          </div>
+          <h2 style="color: rgb(15, 15, 15);"><a style="color: rgb(17, 16, 16);" href="adminOperationtest.html">Back to homepage</a></h2>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+   
+</body>
+</html>

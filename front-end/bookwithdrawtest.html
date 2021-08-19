@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Withdraw book</title>
+   
+    <script src="abc.js"></script>
+    <style>
+        a.one:link {color:darkgoldenrod;}
+        a.one:visited {color:#0000ff;}
+        a.one:hover {color:skyblue;}
+.container 
+    {
+  color: black;
+    }
+.admin 
+    {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 350%;
+    }
+.deleteBook 
+    {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 220%;
+        }
+.deleteMember
+    {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);   
+  font-size: 220%;
+    }
+.bookinventory
+    {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);   
+  font-size: 220%;
+    }
+.submit
+    {
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%, -50%);   
+  font-size: 220%;
+    }
+.homepage
+    {
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);   
+  font-size: 220%;
+    }
+    #bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  min-width: 100%;
+  min-height: 100%;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+         <img src="book.jpg" id="bg" alt="lib">
+         <div style="color: rgb(34, 22, 22)" class="admin"><b>Book Withdraw</b>
+             </div><br>
+         <div style="color: black" class="deleteBook">
+             <p>Search book which you want to withdraw:</p>
+      </div><br>
+        <div class="deleteMember">
+       <input type="text" id="bookname" placeholder="Search.." >
+        <button onclick="addOption()">Search Book</button>
+      </div><br>
+         <div class="bookinventory">
+       <select id="select1">
+            <option value="free">Select book</option>
+        </select>
+    <input id="rnumber" type="text" name="rnumber" class="whole" placeholder="REGISTRATION NUMBER">
+      </div><br>
+      <div class="submit">
+       <div class="button input-box">
+            <input type="submit" onclick="bookWithdraw()" value="Submit">
+          </div>
+      </div><br>
+         <div class="homepage">
+        <p><b><a class="one" href="withdraw-deposit.html">Back to homepage</a></b></p>
+      </div><br>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+   
+</body>
+</html>

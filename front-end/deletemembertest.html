@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Remove User</title>
+  
+    <script src="deleteMember.js"></script>
+    <style>
+        a.one:link {color:black;}
+        a.one:visited {color:#0000ff;}
+        a.one:hover {color:red;}
+.container 
+    {
+  color: black;
+    }
+.admin 
+    {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 350%;
+    }
+.deleteBook 
+    {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 220%;
+        }
+.deleteMember
+    {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);   
+  font-size: 220%;
+    }
+.bookinventory
+    {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);   
+  font-size: 220%;
+    }
+.submit
+    {
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%, -50%);   
+  font-size: 220%;
+    }
+.homepage
+    {
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);   
+  font-size: 220%;
+    }
+    #bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  min-width: 100%;
+  min-height: 100%;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+         <img src="book.jpg" id="bg" alt="lib">
+         <div style="color: green" class="admin"><b>Delete user account</b>
+             </div><br>
+         <div style="color: black" class="deleteBook">
+        <br>
+             <p>Search member by registration number:</p>
+      </div><br>
+        <div class="deleteMember">
+         <input type="text" id="registrationnumber" placeholder="Search.." >
+        <button onclick="searchMember()">Search Member</button>
+        <br>
+      </div><br>
+         <div class="bookinventory">
+        <select id="select1">
+            <option value="free">Select Member</option>
+        </select>
+      </div><br>
+      <div class="submit">
+       <div class="button input-box">
+            <input type="submit" onclick="deleteMember()" value="Delete Member">
+          </div>
+      </div><br>
+         <div class="homepage">
+        <p><b><a class="one" href="adminOperationtest.html">Back to homepage</a></b></p>
+      </div><br>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+   
+</body>
+</html>

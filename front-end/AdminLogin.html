@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin login</title>
+    <link rel="stylesheet" href="admin.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="adminslogin.js"></script>
+    <script>
+      window.onload=function(){
+      document.getElementById('submit').click();
+      }
+      </script>
+</head>
+<body >
+    <body>
+        <div class="container">
+          <input type="checkbox" id="flip">
+          <div class="cover">
+            <div class="front">
+              <!--<img src="images/frontImg.jpg" alt="">-->
+              <div class="text">
+                <span class="text-1">Every new friend is a <br> new adventure</span>
+                <span class="text-2">Let's get connected</span>
+              </div>
+            </div>
+            <div class="back">
+              <!--<img class="backImg" src="images/backImg.jpg" alt="">-->
+              <div class="text">
+                <span class="text-1">Complete miles of journey <br> with one step</span>
+                <span class="text-2">Let's get started</span>
+              </div>
+            </div>
+          </div>
+          <form action="#">
+            <div class="form-content">
+              <div class="login-form">
+                <div class="title">Login</div>
+                <div class="input-boxes">
+                  <div class="input-box">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" id="emailId" placeholder="Enter your email" >
+                  </div>
+                  <div class="input-box">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="passwordId" placeholder="Enter your password" >
+                  </div>
+                  <div class="text"><a href="#">Forgot password?</a></div>
+                  <div class="button input-box">
+                    <input id="submit" type="submit" onclick="checkLogin()" value="Submit">
+                  </div>
+                  <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div>
+                </div>
+              </div>
+              <div class="signup-form">
+                <div class="title">Signup</div>
+                <div class="input-boxes">
+                  <div class="input-box">
+                    <i class="fas fa-user"></i>
+                    <input id="fname" type="text" placeholder="First Name" >
+                  </div>
+                  <div class="input-box">
+                      <i class="fas fa-user"></i>
+                      <input id="lname" type="text" placeholder="Last Name" >
+                    </div>
+                  <div class="input-box">
+                    <i class="fas fa-envelope"></i>
+                    <input id="email" type="text" placeholder="Enter your email" >
+                  </div>
+                  <div class="input-box">
+                    <i class="fas fa-lock"></i>
+                    <input id="password" type="password" placeholder="Enter your password" >
+                  </div>
+                  <div class="input-box">
+                      <i class="fas fa-user"></i>
+                      <input placeholder="gender21" disabled="disabled" >
+                      <input type="radio" id="gender" style="height: 2em;" name="gender" value="male" > Male
+                      <input type="radio" id="gender" style="height: 2em;" name="gender" value="female"> Female
+                    </div>
+                    <div class="input-box">
+                      <i class="fas fa-user"></i>
+                      <input type="text" style="width: 50%;" placeholder="DOB" disabled="disabled" >
+                      <input id="dob" type="date"   placeholder="dd-mm-yyyy" value=""
+                       min="1997-01-01" max="2030-12-31">
+                    </div>
+                    <div class="input-box">
+                      <i class="fas fa-lock"></i>
+                      <input id="eId" type="text" placeholder="Employee Id" >
+                    </div> 
+                    <div class="input-box">
+                      <i class="fas fa-user"></i>
+                      <input type="text" style="width: 50%;" placeholder="Job starting date" disabled="disabled" >
+                      <input id="jobstartingdate" type="date"   placeholder="dd-mm-yyyy" value=""
+                       min="1997-01-01" max="2030-12-31">
+                    </div>
+                    
+                    <div class="input-box">
+                      <i class="fas fa-lock"></i>
+                      <input id="contact" type="Contact number" placeholder="Contact number" >
+                    </div>
+                    <div class="input-box">
+                      <i class="fas fa-lock"></i>
+                      <input id="address" type="text" placeholder="Address" >
+                    </div>  
+                    <div class="input-box">
+                      <i class="fas fa-lock"></i>
+                      <input id="status" type="text" placeholder="Status" >
+                    </div> 
+                  <div class="button input-box">
+                    <input type="submit" onclick="registerAdmin()" value="Submit">
+                  </div>
+                  <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </body>
+
+</body>
+</html>
